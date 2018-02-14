@@ -7,6 +7,7 @@ import javax.persistence.*;
 public class Authority implements Serializable
 {
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long authorityId;
 	private String rollName;
 	private String userName;

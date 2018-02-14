@@ -17,7 +17,7 @@
     <div class="carousel-inner" role="listbox" >
 
        <div class="item active">
-        <img src="<%=request.getContextPath()%>/resources/images/Hitech.png" alt="Best Product" width="100%" height="500px" title="Best seller ">
+        <img src="./resources/images/Hitech.png" alt="Best Product" width="100%" height="500px" title="Best seller ">
         <div class="carousel-caption">
           <h3>Best seller</h3>
           <p>Tech-Redefined</p>
@@ -25,7 +25,7 @@
       </div>
 
       <div class="item">
-        <img src="<%=request.getContextPath()%>/resources/images/Tablet.png" alt="Tablets from Redmi" width="100%" height="500px"  title="Ipad ">
+        <img src="./resources/images/Tablet.png" alt="Tablets from Redmi" width="100%" height="500px"  title="Ipad ">
         <div class="carousel-caption">
           <h3>Middle sized Gadgets</h3>
           <p>Tablets</p>
@@ -33,7 +33,7 @@
       </div>
     
       <div class="item">
-        <img src="<%=request.getContextPath()%>/resources/images/sci-fi.png" alt="Futuristic image" width="100%" height="500px" title="Best of World">
+        <img src="./resources/images/sci-fi.png" alt="Futuristic image" width="100%" height="500px" title="Best of World">
         <div class="carousel-caption">
           <h3>Latest</h3>
           <p>Future is here!!</p>

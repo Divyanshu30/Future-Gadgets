@@ -41,8 +41,8 @@ background-color:black;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="/index" id="myid"> <img src="<%=request.getContextPath()%>/resources/images/logoDG.jpg" height="120%" width="auto" alt="Future Gadgets"> </a>
-	  <a class="navbar-brand" href="/index" id="myid" title="Home"> Future Gadgets</a>
+      <a class="navbar-brand" href="index" id="myid"> <img src="<%=request.getContextPath()%>/resources/images/logoDG.jpg" height="120%" width="auto" alt="Future Gadgets"> </a>
+	  <a class="navbar-brand" href="index" id="myid" title="Home"> Future Gadgets</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar" style="margin-bottom:0px">
       <ul class="nav navbar-nav">
@@ -52,7 +52,7 @@ background-color:black;
           <ul class="dropdown-menu" style="background-color:firebrick;">
             <li><a href="#" id="myid" title="Basic Appliances">Home Appliances</a></li>
             <li><a href="#" id="myid" title="Personal Appliances">Personal Gadgets</a></li>
-            <li><a href="#"id="myid" title="Trends">Latest</a></li>
+            <li><a href="allproducts"id="myid" title="Trends">Latest</a></li>
           </ul>
         </li>
       <form class="navbar-form navbar-left" action="/action_page.php">
