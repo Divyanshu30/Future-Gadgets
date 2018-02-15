@@ -22,12 +22,13 @@
     </thead>
     <tbody>
       <c:forEach items="${product}" var="product" >
+<spring:url value="/resources/images" var="images" />
 <tr>
 <td>${product.productId}</td>
 <td>${product.productName}</td>
 <td>${product.productPrice}</td>
-<td><img src="<c:url value="${product.productImageUrl}" />"  width="10%"/></td>
-<td><a href="#">Details  <span class="glyphicon glyphicon-info-sign"></span></a></td>
+<td><img src="${images}/<c:url value="${product.productImageUrl}" />"  width="10%"/></td>
+<td><a href="viewProduct/<c:out value="${product.productId}" />"> Details  <span class="glyphicon glyphicon-info-sign"></span></a></td>
 </tr>
 </c:forEach>
 

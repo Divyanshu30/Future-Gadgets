@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <style>
 a#myid
 {
@@ -41,8 +43,8 @@ background-color:black;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index" id="myid"> <img src="<%=request.getContextPath()%>/resources/images/logoDG.jpg" height="120%" width="auto" alt="Future Gadgets"> </a>
-	  <a class="navbar-brand" href="index" id="myid" title="Home"> Future Gadgets</a>
+      <a class="navbar-brand" href="index" id="myid"> <img src="./resources/images/logoDG.jpg" height="120%" width="auto" alt="Future Gadgets"> </a>
+	  <a class="navbar-brand" href="<c:url value="/index" />" id="myid" title="Home"> Future Gadgets</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar" style="margin-bottom:0px">
       <ul class="nav navbar-nav">
@@ -59,8 +61,8 @@ background-color:black;
   <div class="input-group">
     <input type="text" class="form-control" placeholder="Search">
     <div class="input-group-btn">
-      <button class="btn btn-default" type="submit">
-        <i class="glyphicon glyphicon-search"></i>
+      <button class="btn btn-info" type="submit">
+        <span class="glyphicon glyphicon-search"></span>
       </button>
     </div>
   </div>

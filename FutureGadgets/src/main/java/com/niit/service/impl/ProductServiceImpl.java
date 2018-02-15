@@ -19,4 +19,7 @@ public List<Product>getAllProducts()
 	return productDao.getAllProducts();
 	
 }
+public Product viewProduct(String productId) {
+	return productDao.viewProduct(productId);
+}
 }

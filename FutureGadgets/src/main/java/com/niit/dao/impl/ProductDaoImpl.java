@@ -1,8 +1,11 @@
 package com.niit.dao.impl;
 
 import java.util.*;
+
+import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,6 +24,12 @@ public List<Product> getAllProducts()
 Query query=sessionFactory.openSession().createQuery("from Product");
 allProducts=query.list();
 return allProducts;
+}
+public Product viewProduct(String productId) {
+Criteria criteria =sessionFactory.openSession().createCriteria(Product.class);
+criteria.add(Restrictions.eq("productId",Long.valueOf(productId)));
+Product viewproduct= (Product)criteria.uniqueResult(); 
+	return viewproduct;
 }
 
 }
