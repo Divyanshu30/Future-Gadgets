@@ -6,17 +6,17 @@ public class Customer implements Serializable
 {	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long customerId;
+	private int customerId;
 	private String customerName;
 	private String customerEmailId;
 	private String customerPhoneNo;
 	public Customer() {
 		// TODO Auto-generated constructor stub
 	}
-	public long getCustomerId() {
+	public int getCustomerId() {
 		return customerId;
 	}
-	public void setCustomerId(long customerId) {
+	public void setCustomerId(int customerId) {
 		this.customerId = customerId;
 	}
 	public String getCustomerName() {

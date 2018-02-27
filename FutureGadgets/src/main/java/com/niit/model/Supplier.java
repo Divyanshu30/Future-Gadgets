@@ -6,7 +6,7 @@ public class Supplier implements Serializable
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long supplierId;
+	private int supplierId;
 	private String supplierName;
 	private long supplierPhoneNo;
 	private String supplierEmailId;
@@ -14,10 +14,10 @@ public class Supplier implements Serializable
 	public Supplier() {
 		// TODO Auto-generated constructor stub
 	}
-	public long getSupplierId() {
+	public int getSupplierId() {
 		return supplierId;
 	}
-	public void setSupplierId(long supplierId) {
+	public void setSupplierId(int supplierId) {
 		this.supplierId = supplierId;
 	}
 	public String getSupplierName() {

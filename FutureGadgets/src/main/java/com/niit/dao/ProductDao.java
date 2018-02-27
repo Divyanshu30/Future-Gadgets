@@ -5,6 +5,6 @@ import java.util.List;
 public interface ProductDao
  {
 	 public List<Product>getAllProducts();
-	 
 	 public Product viewProduct(String productId);
+	 public boolean addProduct(Product product);
  }

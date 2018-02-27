@@ -8,7 +8,7 @@ public class Authority implements Serializable
 {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long authorityId;
+	private int authorityId;
 	private String rollName;
 	private String userName;
 	
@@ -16,11 +16,11 @@ public class Authority implements Serializable
 		// TODO Auto-generated constructor stub
 	}
 
-	public long getAuthorityId() {
+	public int getAuthorityId() {
 		return authorityId;
 	}
 
-	public void setAuthorityId(long authorityId) {
+	public void setAuthorityId(int authorityId) {
 		this.authorityId = authorityId;
 	}
 

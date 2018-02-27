@@ -22,4 +22,8 @@ public List<Product>getAllProducts()
 public Product viewProduct(String productId) {
 	return productDao.viewProduct(productId);
 }
+public boolean addProduct(Product product)
+{
+return productDao.addProduct(product);	
+}
 }
