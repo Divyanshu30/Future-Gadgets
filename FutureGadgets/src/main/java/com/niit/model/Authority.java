@@ -9,7 +9,7 @@ public class Authority implements Serializable
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int authorityId;
-	private String rollName;
+	private String roleName;
 	private String userName;
 	
 	public Authority() {
@@ -24,20 +24,20 @@ public class Authority implements Serializable
 		this.authorityId = authorityId;
 	}
 
-	public String getRollName() {
-		return rollName;
+	public String getRoleName() {
+		return roleName;
 	}
 
-	public void setRollName(String rollName) {
-		this.rollName = rollName;
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
 	}
 
-	public String getUserName() {
+	public String userName() {
 		return userName;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUserName(String userPhNo) {
+		this.userName = userPhNo;
 	}
 	
 	
