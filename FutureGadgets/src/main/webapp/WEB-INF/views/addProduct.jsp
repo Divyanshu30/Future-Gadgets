@@ -1,5 +1,9 @@
 <%@taglib uri = "http://www.springframework.org/tags/form" prefix = "form"%>
 <%@include file="template/Header.jsp" %>
+<br/>
+<br/>
+<br/>
+<br/>
 <div class="container">
   <h1>New Product</h1>>
 </div>

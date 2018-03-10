@@ -24,6 +24,7 @@ public Product viewProduct(String productId) {
 }
 public boolean addProduct(Product product)
 {
+	System.out.println("4");
 return productDao.addProduct(product);	
 }
 }

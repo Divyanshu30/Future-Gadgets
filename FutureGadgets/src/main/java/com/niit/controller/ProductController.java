@@ -38,10 +38,10 @@ public class ProductController {
 	@RequestMapping(value="/submit", method= RequestMethod.POST)
 	public String addProductData( @ModelAttribute("product") Product product, BindingResult result, HttpServletRequest request)
 	{
-		
-	
+		System.out.println("1");
 		boolean flag =productService.addProduct(product);
-		if(flag==true)return "/index";
-		else return "/addProduct";
+		System.out.println("2");
+		if(flag==true)return "index";
+		else return "addProduct";
 	}
 }

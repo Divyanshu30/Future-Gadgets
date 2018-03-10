@@ -1,11 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
 <%@ include file="template/Header.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
 <br />
 <br />
 <br />
@@ -30,12 +27,11 @@
 <td>${product.productName}</td>
 <td>${product.productPrice}</td>
 <td><img src="${images}/<c:url value="${product.productImageUrl}" />"  width="10%"/></td>
-<td><a href="viewProduct/<c:out value="${product.productId}" />" > Details  <span class="glyphicon glyphicon-info-sign"></span></a></td>
+<td><a href="viewProduct/<c:out value="${product.productId}" />"> Details  <span class="glyphicon glyphicon-info-sign"></span></a></td>
 </tr>
 </c:forEach>
-
-    </tbody>
-  </table>
-  </div>
+</tbody>
+</table>
+</div>
 </div>
 <%@ include file="template/Footer.jsp" %>

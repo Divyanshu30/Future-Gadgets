@@ -39,14 +39,20 @@ public boolean addProduct(Product product) {
 	{
 	Session session =sessionFactory.openSession();
 	session.saveOrUpdate(product);
+	//System.out.println("5");
 	flag=true;
 	session.flush();
 	}
 	catch(Exception w)
 	{
+		w.printStackTrace();
 		flag=false;
-		}
-	finally{return flag;}
+		
+	}
+	finally
+	{
+		return flag;
+	}
 }
 
 }
